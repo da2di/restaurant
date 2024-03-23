@@ -1,11 +1,12 @@
 
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Bombance</title>
-    <link rel="icon" type="image/png" href="C:\Users\MolenGeek\Desktop\bombance\Bombance_Logo_i.png" >
+    <link rel="icon" type="image/png" href="Bombance_Logo_i.png" >
     <style>
         body {
             background-color: #333;
@@ -32,24 +33,48 @@
             text-decoration: none;
             font-weight: bold;
         }
+        @media screen and (max-width: 600px) {
+        nav {
+            flex-direction: column; /* Les éléments vont s'empiler verticalement */
+            align-items: center; /* Les éléments seront centrés horizontalement */
+        }
+
+        nav a {
+            margin-top: 10px; /* Espacement entre les éléments */
+        }
+    }
         .container {
             margin: 20px auto;
             padding: 0 20px;
         }
         h2 {
             color: #9CB47D;
+            font-family: 'Times New Roman', Times, serif;
         }
         .menu-item {
             margin-bottom: 20px;
+    
         }
+        .product {
+            font-style: bold;
+        }
+        .describe {
+            color: #dfbb05;
+            font-style: italic;
+            font-size: 60%;
+
+        }
+        
         .price {
-            float: right;
+                        text-align: right;
+                        
         }
+        
     </style>
 </head>
 <body>
     <header>
-        <img src="C:\Users\MolenGeek\Desktop\bombance\BOMBANCE-LOGO-green.png" alt="Votre Logo">
+        <img src="BOMBANCE-LOGO-green.png" alt="Votre Logo">
         <h1>Menu bombance</h1>
     </header>
     <nav>
@@ -60,90 +85,273 @@
         <a href="#sweets">Desserts</a>
         <a href="#drinks">Boissons</a>
     </nav>
+
     <div class="container">
         <section id="starters">
             <h2>Starters & Snacks</h2>
             <div class="menu-item">
-                <p>Samosa</p>
+                <p class="product">Samosa</p>
                 <p class="price">14,00</p>
-                <p>Haché de veau, poireau, oignon</p>
+                <p class="describe">Haché de veau, poireau, oignon</p>
             </div>
             <div class="menu-item">
-                <p>Chicken Wings</p>
+                <p class="product">Chicken Wings</p>
                 <p class="price">12,00</p>
-                <p>Marinade de tomates, grillé au barbecue</p>
+                <p class="describe">Marinade de tomates, grillé au barbecue</p>
             </div>
         </section>
-        
+    
         <section id="burgers">
             <h2>Burgers</h2>
             <div class="menu-item">
-                <p>Bombance Burger</p>
+                <p class="product">Bombance Burger</p>
                 <p class="price">18,00</p>
-                <p>Bœuf Angus Prime, Frites, tomate, oignon, laitue</p>
+                <p class="describe">Bœuf Angus Prime, Frites, tomate, oignon, laitue</p>
             </div>
             <div class="menu-item">
-                <p>Chicken Cesar Burger</p>
+                <p class="product">Chicken Cesar Burger</p>
                 <p class="price">18,00</p>
-                <p>Poulet au babeurre, laitue iceberg, tomate, sauce césar épicée</p>
+                <p class="describe">Poulet au babeurre, laitue iceberg, tomate, sauce césar épicée</p>
             </div>
             <div class="menu-item">
-                <p>Veggie Burger</p>
+                <p class="product">Veggie Burger</p>
                 <p class="price">18,50</p>
-                <p>Falafel, tomate, oignon, laitue</p>
+                <p class="describe">Falafel, tomate, oignon, laitue</p>
             </div>
         </section>
-
+    
+        <section id="toppings">
+            <h2>Toppings</h2>
+            <div class="menu-item">
+                <p class="product">Bacon  </p>
+                <p class="price">2,00</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Oeuf Frit  </p>
+                <p class="price">2,00</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Oignon  </p>
+                <p class="price">2,00</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Fromage  </p>
+                <p class="price">2,00</p>
+            </div>
+        </section>
+    
         <section id="craft">
-            <h2>Plats Faits Maison</h2>
+            <h2>Craft</h2>
             <div class="menu-item">
-                <p>Poulet Moambe</p>
+                <p class="product">Poulet Moambe</p>
                 <p class="price">18,00</p>
-                <p>Suprême / cuisse de poulet fermier, oignon, tomate, ail, huile de palme, sel, poivre</p>
+                <p class="describe">Suprême / cuisse de poulet fermier, oignon, tomate, ail, huile de palme, sel, poivre</p>
             </div>
-            <!-- Ajouter les autres plats faits maison -->
-        </section>
-
-        <section id="sides">
-            <h2>Accompagnements</h2>
             <div class="menu-item">
-                <p>Frites Bombance</p>
+                <p class="product">Fish&Chips</p>
+                <p class="price">17,00</p>
+                <p>Brochettes de dinde</p>
+                <p class="price">17,00</p>
+                <p class="describe">Oignon, marinade de tomates, grillé au barbecue</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Brochettes de Chèvre</p>
+                <p class="price">18,00</p>
+                <p class="describe">Oignon, marinade de tomates, grillé au barbecue</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Duo Brochettes dinde et Chèvre</p>
+                <p class="price">18,00</p>
+                <p class="describe">Oignon, marinade de tomates, grillé au barbecue</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Wrap aux poulet</p>
+                <p class="price">17,00</p>
+                <p class="describe">Maïs, haricots, Suprême de poulet ail, sel, poivre</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Maafé poulet</p>
+                <p class="price">18,00</p>
+                <p>Suprême / cuisse de poulet fermier, oignon, tomate, ail, sel, poivre, arachide</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Pondu / Saka Saka</p>
+                <p class="price">16,00</p>
+                <p class="describe">Feuilles de Manioc, arachide, ail, sel, poivre</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Tajine Veg</p>
+                <p class="price">14,00</p>
+            </div>
+        </section>
+    
+        <section id="side">
+            <h2>Side</h2>
+            <div class="menu-item">
+                <p class="product">Frites Bombance</p>
                 <p class="price">12,00</p>
-                <p>Parmesan - tomates séchées et mayonnaise basilic</p>
+                <p class="describe">Parmesan - tomates séchées et mayonnaise basilic</p>
             </div>
-            <!-- Ajouter les autres accompagnements -->
-        </section>
-
-        <section id="sweets">
-            <h2>Desserts</h2>
             <div class="menu-item">
-                <p>Moelleux au chocolat</p>
+                <p class="product">Frites</p>
                 <p class="price">6,00</p>
             </div>
             <div class="menu-item">
-                <p>Beignets</p>
+                <p class="product">Frites de patates douces</p>
+                <p class="price">7,00</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Riz</p>
+                <p class="price">6,00</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Riz pilau</p>
+                <p class="price">7,00</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Parata / Chapati</p>
+                <p class="price">6,00</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Fufu / Ugali</p>
+                <p class="price">7,00</p>
+            </div>
+        </section>
+    
+        <section id="sauces">
+            <h2>Sauces</h2>
+            <div class="menu-item">
+                <p class="product">Ketchup</p>
+                <p class="price">1,50</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Mayo</p>
+                <p class="price">1,50</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Truffel Mayo</p>
+                <p class="price">2,50</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Basilic Mayo</p>
+                <p class="price">2,50</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Piripiri</p>
+                <p class="price">2,50</p>
+            </div>
+        </section>
+            
+        <section id="sweets">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <p class="product">Moelleux au chocolat</p>
+                <p class="price">6,00</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Beignets</p>
                 <p class="price">6,00</p>
             </div>
         </section>
 
         <section id="drinks">
-            <h2>Boissons</h2>
-            <h3>Boissons Softs</h3>
+            <h2>Boissons Softs</h2>
             <div class="menu-item">
-                <p>Eau bleu / rouge 25cl</p>
-                <p class="price">3,50</p>
+                <p class="product">Eau bleu / rouge</p>
+                <p class="price">25cl 3,50 / 50cl 5,00</p>
+                
             </div>
-            <!-- Ajouter les autres boissons softs -->
-            <h3>Homemade Iced Tea</h3>
-            <!-- Ajouter les autres boissons -->
-            <h3>Bières</h3>
-            <!-- Ajouter les différentes bières -->
-            <h3>Vin</h3>
-            <!-- Ajouter les différents vins -->
-            <h3>Cidres</h3>
-            <!-- Ajouter les différents cidres -->
+            <div class="menu-item">
+                <p class="product">Homemade Iced Tea</p>
+                <p class="price">30cl 4,00 / 1L 12,00</p>
+                <p class="describe">Ginger/Citronel/Mint/Bissap</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Ritchie Cola/Citron Gingembre</p>
+                <p class="price">4,50</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Limonade Myrtilles/Rhubarbe - L’Annexe</p>
+                <p class="price">5,00</p>
+            </div>
+        </section>
+        
+        <section id="beers">
+            <h2>Bières</h2>
+            <div class="menu-item">
+                <p class="product">Gasabo</p>
+                <p class="price">5,00</p>
+                <p class="describe">Blond - ABV 6.4% - 33cl</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Zinnebir</p>
+                <p class="price">4,50</p>
+                <p class="describe">Pale Ale - ABV 5.8% - 33cl</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Jambe-de-bois</p>
+                <p class="price">5,50</p>
+                <p class="describe">Hoppy Triple - ABV 8% - 33cl</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Zenne Pils</p>
+                <p class="price">4,50</p>
+                <p class="describe">Unfiltered Craft Lager - ABV 4,8% - 33cl</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Brussels Calling</p>
+                <p class="price">5,50</p>
+                <p class="describe">Blond Belgian IPA 6,5% - 33cl</p>
+            </div>
+        </section>
+        
+        <section id="wines">
+            <h2>Vin</h2>
+            <div class="menu-item">
+                <p class="product">N°1 Sauvignon</p>
+                <p class="price">6 / 30</p>
+                <p class="describe">100 % Sauvignon 11.5% vol - 75 cl</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">N°3 Colombard Sauvignon</p>
+                <p class="price">6 / 30</p>
+                <p class="describe">85% Colombard – 15% Sauvignon 11% vol - 75 cl</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">N°6 Rose</p>
+                <p class="price">6 / 30</p>
+                <p class="describe">Assemblage de Cabernet Sauvignon, Cabernet Franc, Merlot et Syrah 11.5% vol - 75 cl</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">N°7 Merlot - Tannat</p>
+                <p class="price">6 / 30</p>
+                <p class="describe">60% Merlot – 40% Tannat 12,5% vol - 75 cl</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Basa</p>
+                <p class="price">40</p>
+                <p class="describe">Sanje BIO 90% Verdejo, 10% Viura 13% vol - 75 cl</p>
+            </div>
+            <div class="menu-item">
+                <p class="product">Paul Jaboulet Aîné</p>
+                <p class="price">40</p>
+                <p class="describe">AOP Côtes-du-Rhône 60% Grenache, 40% Syrah 14% vol - 75 cl</p>
+            </div>
+        </section>
+        
+        <section id="ciders">
+            <h2>Cidres</h2>
+            <div class="menu-item">
+                <p class="product">Cidre Brut du Condroz</p>
+                <p class="price">6 / 30</p>
+                <p class="describe">Cidre barrique - 7% - 2022 - 75 cl</p>
+            </div>
         </section>
 
     </div>
 </body>
+<footer>
+    <!-- Pied de page -->
+    <p>|Contactez-nous: Hello@bombance.be|jeud-dim :18:00-23:00|©2023 <a href="bombance.be/" >Bombance</a> Tous droits réservés</p>
+</footer>
 </html>
